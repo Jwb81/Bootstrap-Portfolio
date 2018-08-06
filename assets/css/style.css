@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-image: url("../images/connectwork.png");
+}
+
+#body {
+    margin-top: 25px;
+    background-color: white;
+}
+
+.container {
+    max-width: 960px;
+    min-height: 100%;
+}
+
+#footer {
+    color: white;
+
+    height: 50px;
+    line-height: 50px;
+    border-top: 5px solid #4aaaa5;
+    background-color: #666;
+}
+
+
+
+
+
+/* index.html */
+
+#profilePic {
+    /* max-width: 100px; */
+    float: left;
+    margin: 10px 10px 10px 0px;
+}
