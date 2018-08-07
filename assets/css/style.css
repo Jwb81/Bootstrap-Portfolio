@@ -5,35 +5,53 @@
 
 html, body {
     background-image: url("../images/connectwork.png");
+    height: 100%;
 }
 
-#body {
-    margin-top: 25px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+}
+
+.body {
     background-color: white;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 .container {
     max-width: 960px;
-    min-height: 100%;
 }
 
-#footer {
-    color: white;
 
-    height: 50px;
-    line-height: 50px;
+.footer {
+    color: #aaa;
     border-top: 5px solid #4aaaa5;
     background-color: #666;
+
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
 }
 
+.nav-text {
+    font-size: 1.3em;
+}
 
+.navbar-brand {
+    background-color: #4aaaa5;
+}
 
+#home-link {
+    color: white;
+}
 
-
-/* index.html */
-
-#profilePic {
-    /* max-width: 100px; */
-    float: left;
-    margin: 10px 10px 10px 0px;
+.bg-teal {
+    background-color: #4aaaa5;
 }

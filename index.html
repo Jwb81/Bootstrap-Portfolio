@@ -6,86 +6,80 @@
     <title>Basic Portfolio</title>
 
     <!-- styles -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- <div id="body" class="container"> -->
+    <div class="wrapper ">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html">Jason Barnett</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <!-- <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                    </li> -->
-                </ul>
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item"><span class="nav-link">|</span></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item"><span class="nav-link">|</span></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-text">
+            <div class="container px-0">
+                <a class="navbar-brand p-2 font-weight-bold" id="home-link" href="./index.html">Jason Barnett</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item d-none d-md-block"><span class="nav-link">|</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block"><span class="nav-link">|</span></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
             </div>
+        </nav>
+
+        <div class="body container my-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="font-weight-bold pt-3">About Me</h2>
+                        <hr style="height:2px;background-color:gray;">
+                    </div>
+                </div> <!-- end row-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p id="aboutMe">
+                            <img id="profilePic" class="float-left my-2 mr-3" src="https://www.placehold.it/100x100">
+                            
+                            I am currently a student at the University of Akron.  I am studying computer science, 
+                            programming, and web development.  I have played soccer my entire life and travelled 
+                            to over 20 states just to play in a few tournaments.  My dad and I also like to 
+                            golf frequently.  In some of my other free time, I like to mess around with raspberry pis 
+                            and come up with fun programs.  Currently, I am trying to build an automated bartender using 
+                            NodeJS, python, a couple DC motors, and a relay board.
+                            <br><br>
+                            Fun fact: my brother taught me how to solve a 3x3 rubik's cube on a six hour drive home from 
+                            Maryland.  Since then, I learned how to solve the 2x2, 4x4, 5x5, 6x6, and 10x10 cubes.  My 
+                            dad and I have only solved the 10x10 cube a couple times because it's too time consuming.
+                            
+                        </p>
+                    </div>
+                </div> <!-- end row-->
+               
         </div>
 
-    </nav>
-
-    <div id="body" class="container">
-        
-        <!-- <div class="container"> -->
-            
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>About Me</h2>
-                    <hr style="height:2px;background-color:gray;">
-                </div>
-            </div> <!-- end row-->
-            <div class="row">
-                <div class="col-sm-12">
-                    <p id="aboutMe">
-                        <img id="profilePic" src="https://www.placehold.it/100x100">
-                        
-                        I am currently a student at the University of Akron.  I am studying computer science, 
-                        programming, and web development.  I have played soccer my entire life and travelled 
-                        to over 20 states just to play in a few tournaments.  My dad and I also like to 
-                        golf frequently.  In some of my other free time, I like to mess around with raspberry pis 
-                        and come up with fun programs.  Currently, I am trying to build an automated bartender using 
-                        NodeJS, python, a couple DC motors, and a relay board.
-                        <br><br>
-                        Fun fact: my brother taught me how to solve a 3x3 rubik's cube on a six hour drive home from 
-                        Maryland.  Since then, I learned how to solve the 2x2, 4x4, 5x5, 6x6, and 10x10 cubes.  My 
-                        dad and I have only solved the 10x10 cube a couple times because it's too time consuming.
-                        
-                    </p>
-                </div>
-            </div> <!-- end row-->
-                        
-       
-
-    </div> <!-- end .container -->
-
-    <div id="footer" class="fixed-bottom text-center">
-        <div class="container">
-                &copy; Jason Barnett 2018
-        </div>
-    </div>
+        <nav class="navbar navbar-expand-sm footer ">
+            <div class="container px-0" >
+                <div style="width: 100%; text-align: center;">&copy; Jason Barnett 2018</div>
+            </div>
+        </nav>
+    </div> <!-- end .wrapper -->
 
 </body>
 </html>
